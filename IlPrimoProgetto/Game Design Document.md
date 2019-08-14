@@ -35,7 +35,7 @@
    L'unico modo di controllare il giocatore è attraverso la sua arma. Per mirare si tocca lo schermo e tenendo premuto si sceglie la direzione. Per sparare si rilascia lo schermo.
 + Mechanics
 
-   Quando il giocatore mira il tempo rallentaaaaaa + power ups tattici + quando un nemico m
+   Quando il giocatore mira il tempo rallentaaaaaa + power ups tattici + quando un nemico muore il giocatoe guadagna munizioni
 + Game Options
 + Player Behaviors To Encurage or Avoid
 
