@@ -37,23 +37,43 @@
 
    Quando il giocatore mira il tempo rallentaaaaaa + power ups tattici + quando un nemico muore il giocatoe guadagna munizioni
 + Game Options
+
+   Una modalità a livelli (storia?) (modalità infinita/sopravvivenza (difficoltà?))
 + Player Behaviors To Encurage or Avoid
 
+   muoversi usando il rinculo degli spari + non ce nessun obbligo ad uccidere ogni nemico presente: conta solo la distanza + non andare troppo lento/non riflettere troppo 
 ---
 
 + Story And Narrative
+
+   [cuscenes alla fine e inizio di ogni livello con una storia semplice ma intuitiva]
 + Game World
+
+   Un buco
 + Characters
 
+   1 personaggio armato di fucile [shop con altri personaggi??]
 ---
 
 + Levels
 + Training Level (?)
+
+   Sì, ma deve essere semplice e diretto
 + Assessment 
+
+   Arrivare vivo alla fine del livello
 
 ---
 
 + Visual System 
+
+   Modo di mostrare le munizioni rimanenti, menù di pausa, camera ortografica (no prospettica)
 + Control System
+
+   Touch (tocco senza rilasciare per mirare, rilasciare per sparare)
 + Audio / Music / SFX
+
+   Si vedrà
 + Help System
+
+   N/A
