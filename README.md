@@ -1,2 +1,2 @@
 # I-Progetti
-repo del (NomeGruppo)
+repo del (FUCK YOUR SELF)
