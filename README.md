@@ -1,2 +1,2 @@
 # I-Progetti
-repo del (FUCK YOUR SELF)
+repo del (F*** YOUR SELF)
