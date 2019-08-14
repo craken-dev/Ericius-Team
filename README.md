@@ -1,2 +1,2 @@
 # I-Progetti
-repo del (Inserire nome gruppo)
+repo del (NomeGruppo)
