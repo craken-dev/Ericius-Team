@@ -1,4 +1,2 @@
 # I-Progetti
-repo del (F*** YOUR SELF)
-
-Hula hula hoop
+repo della nostra super setta
