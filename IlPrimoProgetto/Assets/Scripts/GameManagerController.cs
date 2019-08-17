@@ -7,6 +7,7 @@ public class GameManagerController : MonoBehaviour
     public static GameManagerController obj;
 
     [SerializeField] private float slow_time_factor = 0.04f;
+    private bool is_time_slowed = false;
     private void Awake()
     {
         if(obj == null)
@@ -21,14 +22,22 @@ public class GameManagerController : MonoBehaviour
 
     public void SlowTime()
     {
-        Time.timeScale = slow_time_factor;
-        Time.fixedDeltaTime = 1/50 * slow_time_factor;
+        if (!is_time_slowed)
+        {
+            Time.timeScale = slow_time_factor;
+            Time.fixedDeltaTime = 1 / 50 * slow_time_factor;
+            is_time_slowed = true;
+        }
     }
 
     public void NormalTime()
     {
-        Time.timeScale = 1;
-        Time.fixedDeltaTime = 1 / 50;
+        if (is_time_slowed)
+        {
+            Time.timeScale = 1;
+            Time.fixedDeltaTime = 1 / 50;
+            is_time_slowed = false;
+        }
     }
 
 
