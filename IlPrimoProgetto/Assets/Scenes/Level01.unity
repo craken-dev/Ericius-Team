@@ -218,7 +218,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7556212dccee36246943404a5bec8544, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  slow_time_factor: 0.04
 --- !u!4 &168946038
 Transform:
   m_ObjectHideFlags: 0
@@ -668,7 +667,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 603598121, guid: 84cdd8efb2e855042a065fa91039e7d2, type: 3}
       propertyPath: shooting_force
-      value: 12
+      value: 600
+      objectReference: {fileID: 0}
+    - target: {fileID: 603598121, guid: 84cdd8efb2e855042a065fa91039e7d2, type: 3}
+      propertyPath: reload_time
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 5231363369662166595, guid: 84cdd8efb2e855042a065fa91039e7d2,
         type: 3}
