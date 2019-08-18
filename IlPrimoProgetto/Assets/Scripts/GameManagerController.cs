@@ -6,7 +6,7 @@ public class GameManagerController : MonoBehaviour
 {
     public static GameManagerController obj;
 
-    [Range(1, 0)] [SerializeField] private float slow_time_factor = .4f;
+    [Range(100, 0)] [SerializeField] private float slow_time_factor_percentual = 20f;
     private void Awake()
     {
         if(obj == null)
@@ -21,7 +21,7 @@ public class GameManagerController : MonoBehaviour
 
     public void SlowTime()
     {
-        Time.timeScale = slow_time_factor;
+        Time.timeScale = slow_time_factor_percentual / 100;
         Time.fixedDeltaTime = .02f * Time.timeScale;
     }
 
