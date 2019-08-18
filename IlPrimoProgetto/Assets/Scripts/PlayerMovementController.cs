@@ -33,6 +33,7 @@ public class PlayerMovementController : MonoBehaviour
         {
             if (shooting || aming_timer >= max_aming_time)
             {
+                GameManagerController.obj.NormalTime();
                 Vector2 shoot_direction = touch_pos - (Vector2)transform.position;
                 Shoot(shoot_direction);
 
@@ -46,6 +47,7 @@ public class PlayerMovementController : MonoBehaviour
             {
                 touch_pos = Camera.main.ScreenToWorldPoint(Input.GetTouch(0).position);
                 aming_timer += Time.unscaledDeltaTime;
+                GameManagerController.obj.SlowTime();
             }
         }
         else
