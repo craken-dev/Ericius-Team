@@ -31,4 +31,9 @@ public class GameManagerController : MonoBehaviour
         Time.fixedDeltaTime = .02f;
     }
 
+    public void EndGame()
+    {
+        Debug.Log("HAHAHAHAH YOU DIE");
+    }
+
 }
