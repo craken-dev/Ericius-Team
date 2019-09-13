@@ -19,6 +19,8 @@ public class PlayerMovementController : MonoBehaviour
     private float aming_timer = 0f;
     private float reload_timer = 0f;
 
+    [SerializeField] Transform arm;
+
     Vector2 touch_pos;
 
     private void Start()
@@ -46,6 +48,11 @@ public class PlayerMovementController : MonoBehaviour
             else
             {
                 touch_pos = Camera.main.ScreenToWorldPoint(Input.GetTouch(0).position);
+                Vector3 shoot_direction = touch_pos - (Vector2)transform.position;
+                shoot_direction.Normalize();
+                float rotZ = Mathf.Atan2(shoot_direction.y, shoot_direction.x) * Mathf.Rad2Deg;
+                arm.rotation = Quaternion.Euler(0f, 0f, rotZ);
+
                 aming_timer += Time.unscaledDeltaTime;
                 GameManagerController.obj.SlowTime();
             }
