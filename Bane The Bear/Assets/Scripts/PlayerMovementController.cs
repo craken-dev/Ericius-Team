@@ -19,7 +19,9 @@ public class PlayerMovementController : MonoBehaviour
     private float aming_timer = 0f;
     private float reload_timer = 0f;
 
-    [SerializeField] Transform arm;
+    [SerializeField] private Transform arm;
+    [SerializeField] private Transform shoot_origin;
+    [SerializeField] private GameObject projectilePrefab;
 
     Vector2 touch_pos;
 
@@ -47,10 +49,10 @@ public class PlayerMovementController : MonoBehaviour
             }
             else
             {
-                touch_pos = Camera.main.ScreenToWorldPoint(Input.GetTouch(0).position);
-                Vector3 shoot_direction = touch_pos - (Vector2)transform.position;
+                touch_pos = Camera.main.ScreenToWorldPoint(Input.GetTouch(0).position);             
+                Vector3 shoot_direction = touch_pos - (Vector2)transform.position;                     
                 shoot_direction.Normalize();
-                float rotZ = Mathf.Atan2(shoot_direction.y, shoot_direction.x) * Mathf.Rad2Deg;
+                float rotZ = Mathf.Atan2(shoot_direction.y, shoot_direction.x) * Mathf.Rad2Deg;        
                 arm.rotation = Quaternion.Euler(0f, 0f, rotZ);
 
                 aming_timer += Time.unscaledDeltaTime;
@@ -70,6 +72,7 @@ public class PlayerMovementController : MonoBehaviour
     {
         Debug.Log("Shooting");
         dir.Normalize();
+        Launch(dir);
         dir *= shooting_force;
 
         rb.velocity = Vector2.zero;
@@ -102,5 +105,12 @@ public class PlayerMovementController : MonoBehaviour
                     break;
             }
         }
+    }
+
+    private void Launch(Vector2 LookDirection)
+    {
+        GameObject projectileObject = Instantiate(projectilePrefab, shoot_origin.position, Quaternion.identity);
+        Projectile projectile = projectileObject.GetComponent<Projectile>();
+        projectile.Launch(LookDirection, 300);
     }
 }

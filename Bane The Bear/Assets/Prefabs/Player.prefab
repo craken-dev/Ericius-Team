@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1563999184}
   - component: {fileID: 1563999185}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: arm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -93,7 +93,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1784229512}
   - component: {fileID: 1784229513}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: machinegun
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -177,7 +177,7 @@ GameObject:
   - component: {fileID: 2251482330422523344}
   - component: {fileID: -7369677290515364880}
   - component: {fileID: 603598121}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -302,6 +302,9 @@ MonoBehaviour:
   max_aming_time: 2
   reload_time: 0.5
   arm: {fileID: 1563999184}
+  shoot_origin: {fileID: 137432688751948952}
+  projectilePrefab: {fileID: 1072500840773191956, guid: 91ce5830f9935c04ebab9d7f2ac8b250,
+    type: 3}
 --- !u!1 &3174947058949797379
 GameObject:
   m_ObjectHideFlags: 0
@@ -311,7 +314,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 137432688751948952}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: FirePoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
